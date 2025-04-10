@@ -1,0 +1,4 @@
+manimgl
+matplotlib
+numpy
+sklearn
