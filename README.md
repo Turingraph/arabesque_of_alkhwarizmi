@@ -9,7 +9,7 @@ and generating cool looking visual art.
 
 Before I started to learn to code for the first time in 2021, I used to like drawing, especially by draw multiple straight lines and grids
  as the basis of my artwork such that I can draw symmetrical pattern and/or 3D perspective art. The 3Blue1Brown's Linear Algebra visualization (https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) also reminds me of how I drew my artworks.
-However in my opinion, visual art is boring because many artists try to create new artworks when the visual art is limited in 5D rgbxy Euclidean Space where there rarely anythings new to be created.
+However in my opinion, visual art is boring because many artists try to create new artworks when the visual art is limited in 5D rgbxy Euclidean Space where there is rarely anythings new to be created.
 
 One of multiple ways to creating new interesting artworks is to create the 2D representation of higher dimensional objects.
 
@@ -43,7 +43,7 @@ The expected features of MVP include
 3.  PCA and cross section 2D representation
 -   Allow user to visualize the 2D representation of the user defined 3D objects by either by using PCA or 2D plane cross section.
 4.  Solving Basic Linear Equation
--   Calculating Gaussian Elimination, 3D Cross product, Eigan Value, Eigan Vector, Inverse Matrix, Determinant, Matrix multiplication and Matrix power.
+-   Calculating Gaussian Elimination, Null space, 3D Cross product, Eigan Value, Eigan Vector, Inverse Matrix, Determinant, Matrix multiplication and Matrix power.
 
 Ignore advanced features (we might add those features in the future)
 1.  4D n-d higher dimensional general space
@@ -51,11 +51,11 @@ Ignore advanced features (we might add those features in the future)
 2.  Other object
 -   e.g. 2D pentagon, 2D heptagon, 3D Dodecahedron, 4D cube, Torus, 2D circle, user's 3D or higher dimensional model, user high dimensional data, A B C alphabets etc.
 3.  Use other dimensional reduction algorithm for visualization e.g. t-SNE, LDA etc.
-5.  Analyzing the numerical error, limit, connectedness, surface area, volume, unknotting number, tangent space and other properties of shape.
-6.  Check if any 2 or more objects are collided with each other.
-7.  Solve more advanced Equation
--   e.g. SVD, Matrix Exponential, Symmetrical Group decomposition of the user defined symmetrical object, Linear Programming, construct the 3D model out of 2D rotated images etc
-8.  Other related advanced visualization e.g. Sphere packing, Euler characteristic, Lie Group for defining rotation etc.
+4.  Analyzing the numerical error, limit, connectedness, surface area, volume, unknotting number, tangent space and other properties of shape.
+5.  Check if any 2 or more objects are collided with each other.
+6.  Solve more advanced Equation
+-   e.g. SVD, Matrix Exponential, Symmetrical Group decomposition of the user defined symmetrical object, Linear Programming, construct the 3D model out of 2D rotated images, Matrix infinite series and product etc
+7.  Other related advanced visualization e.g. Sphere packing, Euler characteristic, Lie Group for defining rotation etc.
 
 # Folder structures
 
@@ -74,9 +74,9 @@ This project compose of the following sub folders
 6.  `include/`
 -   Contains: Class interface of `canvas/`, `function/` and `object/` for enhancing SOLID coding practice.
 7.  `shape/`
--   Contains: Shape (a.k.a. Set of vectors that form shape e.g. cube, plane, triangle, 3D simplex, 2D alphabet etc.) and group of shape that form tessellation e.g. 2D and 3D square Grid, 2D triangle grid etc.
+-   Contains: Shape (a.k.a. Set of vectors that form shape e.g. cube, plane, triangle, 3D simplex, 2D alphabet etc.) and collection of shape that form tessellation e.g. 2D and 3D square Grid, 2D triangle grid etc.
 8.  `tests/`
--   Contains: Coing scripts that check if our code works as expected.
+-   Contains: Coding scripts that check if our code works as expected.
 9.  `utility/`
 -   Contains: Python files for other purpose e.g. check hardware performance, save Manim output video and float-string type conversion etc
 
@@ -86,7 +86,6 @@ This project compose of the following sub folders
 2.  Copy URL or `Download Zip`
 3.  Install Python and pip
 4.  `pip install -r requirements.txt`
-5.  Install Tesseract OCR
 
 Read this for more detail.
 1.  How to install Python ?

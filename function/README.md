@@ -11,5 +11,5 @@ Linear function L have 2 properties
 2.  For all x, y in Ring: x * L(y) = L(x * y)
 
 Note that
--   Ring is the number system e.g. Integer, Real number etc. However the formal definition of ring is out of scope of the MVP version of this project.
+-   Ring is the number system e.g. Integer, Fractional number, Real number, Complex number etc. However the formal definition of ring is out of scope of the MVP version of this project.
 -   Example of Linear function include scalar multiplication, matrix multiplication, integration, differentiation etc. However we will only focus on scalar multiplication and matrix multiplication in the MVP version of this project.
