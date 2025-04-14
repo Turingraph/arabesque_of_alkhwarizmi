@@ -1,1 +1,1 @@
-This folder contains class interface of `canvas/`, `function/` and `object/` for enhancing SOLID coding practice.
+This folder contains class interface of `canvas/`, `linear_algebra/`, `object_basis/` and `object_compose/` for enhancing SOLID coding practice.
