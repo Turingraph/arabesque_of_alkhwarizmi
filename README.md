@@ -1,6 +1,10 @@
 # Description
 
-`arabesque_of_alkhwarizmi` is Numpy-Manim based Python library that is used for visualizing 2D and 3D representation of linear algebra related concept and user defined dataset, for educational purpose (especially for learning Linear Algebra) and as the basis for visualizing high dimensional geometry, which are useful for AI research, error correction algorithm, data science, physic and other various mathematical sub disciplines.
+`arabesque_of_alkhwarizmi` is Numpy-Manim based Python library that is used for visualizing 2D and 3D representation of linear transformed 2D and 3D user defined geometric object e.g. vector (point), line, user defined polytope etc with user defined matrix. 
+
+This library also serve as linear algebra calculator that compute the properties of vector and matrix e.g. length of vector, Eigan Vector, Value and Determinant of matrix etc and solve linear equation and map with the visualization.
+
+This project is intended for visualizing the 2D and 3D representation of higher dimensional geometry in the future after finishing MVP via dimensional reduction algorithm e.g. singular matrix, 2D cross section, PCA, t-SNE etc.
 
 # Inspiration
 
