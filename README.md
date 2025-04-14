@@ -1,14 +1,11 @@
 # Description
 
-`arabesque_of_alkhwarizmi` is Numpy-Manim based Python library that is used for visualizing 2D and 3D representation of 3D, 4D 
-and/or 5D objects e.g. 4D Platonic Solids, Hypersphere, Klein bottle etc. 
-This tools help user learn interesting mathematical concept e.g. Linear Algebra, Group Theory, Lie Algebra, Topology etc 
-and generating cool looking visual art.
+`arabesque_of_alkhwarizmi` is Numpy-Manim based Python library that is used for visualizing 2D and 3D representation of linear algebra related concept and user defined dataset. This tools help user learn interesting mathematical concept e.g. Linear Algebra, Group Theory, Lie Algebra, Topology etc, gain visual intuition of high dimensional geometry and generating cool looking visual art.
 
 # Inspiration
 
-Before I started to learn to code for the first time in 2021, I used to like drawing, especially by draw multiple straight lines and grids
- as the basis of my artwork such that I can draw symmetrical pattern and/or 3D perspective art. The 3Blue1Brown's Linear Algebra visualization (https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) also reminds me of how I drew my artworks.
+Before I started to learn to code for the first time in 2021, I used to like drawing, especially by draw multiple straight lines and grids 
+as the basis of my artwork such that I can draw symmetrical pattern and/or 3D perspective art. The 3Blue1Brown's Linear Algebra visualization (https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) also reminds me of how I drew my artworks. 
 However in my opinion, visual art is boring because many artists try to create new artworks when the visual art is limited in 5D rgbxy Euclidean Space where there is rarely anythings new to be created.
 
 One of multiple ways to creating new interesting artworks is to create the 2D representation of higher dimensional objects.
@@ -22,7 +19,9 @@ High dimensional geometry also have very interesting unexpected properties such 
 -   https://en.wikipedia.org/wiki/Cross_product#Generalizations
 4.  The Quaternions Ring is the 4D Vector Space that can be used for describe rotation of 3D Object.
 -   https://youtu.be/zjMuIxRvygQ?si=-UFgbKB1eu5stJrf
-5.  etc.
+5.  Hypersphere have weird property
+-   https://youtu.be/zwAD6dRSVyI?si=O7BCp7T_rkXYK8lm
+6.  etc.
 -   https://youtu.be/dr2sIoD7eeU?si=vF1h4ErhVPrz6SIe
 
 I also have graphite color synesthesia and I want to know what color do the 2D representations of higher dimensional version of alphabet and number it feel for me.
@@ -33,29 +32,73 @@ This project is created in 2025, Apr 10th, it is unusable and in the MVP (minimu
 
 # Feature of MVP (minimum viable product)
 
-The expected features of MVP include
-1.  2D and 3D Linear Algebra visualization
--   Visualizing multiple linear transformed grids in 2D and 3D similar to 3Blue1Brown's Linear Algebra seires.
-2.  2d image, 2d square, 3D cube, 3D simplex, 3D orthoplex, 2D triangle, 2D plane, line and point
--   Allow user to define size, color and position of only linear transformed 2d image, 2d square, 3D cube, 2D plane, 
-    line and point in 2D and 3D Euclidean Space with user customized matrix (a.k.a. linear map).
--   Allow user to place objects such that it become space filling tiling e.g. 2D square grid, 2D triangle tiling, 3D cube grid etc.
-3.  PCA and cross section 2D representation
--   Allow user to visualize the 2D representation of the user defined 3D objects by either by using PCA or 2D plane cross section.
-4.  Solving Basic Linear Equation
--   Calculating Gaussian Elimination, Null space, 3D Cross product, Eigan Value, Eigan Vector, Inverse Matrix, Determinant, Matrix multiplication and Matrix power.
+## The expected features in MVP
 
-Ignore advanced features (we might add those features in the future)
-1.  4D n-d higher dimensional general space
--   Define and visualizing object in 4D and higher dimensional Euclidean space, and Non-Euclidean space.
-2.  Other object
--   e.g. 2D pentagon, 2D heptagon, 3D Dodecahedron, 4D cube, Torus, 2D circle, user's 3D or higher dimensional model, user high dimensional data, A B C alphabets etc.
-3.  Use other dimensional reduction algorithm for visualization e.g. t-SNE, LDA etc.
-4.  Analyzing the numerical error, limit, connectedness, surface area, volume, unknotting number, tangent space and other properties of shape.
-5.  Check if any 2 or more objects are collided with each other.
-6.  Solve more advanced Equation
--   e.g. SVD, Matrix Exponential, Symmetrical Group decomposition of the user defined symmetrical object, Linear Programming, construct the 3D model out of 2D rotated images, Matrix infinite series and product etc
-7.  Other related advanced visualization e.g. Sphere packing, Euler characteristic, Lie Group for defining rotation etc.
+1.  Allow user to define vector (a.k.a. point, defined by only 2D or 3D numpy float array) only in 2D and 3D Vector space over Real number manually or via their dataset (similar or same as Numpy and Pandas).
+2.  Allow user to compose vector as 
+    1.  straight line (defined by 2 vectors, both 2 ends of the line are defined by vectors)
+    2.  long straight line (defined by 2 vectors, the line is long indefinitely, both 2 ends of line are defined by the boundary of visualization canvas)
+    3.  2D polytope (defined by multiple straight lines)
+    4.  3D polytope (defined by multiple 2D polytope)
+    5.  tiling (defined by multiple straight lines and/or multiple long straight lines)
+    6.  hyperplain (defined by one normal vector and one center vector)
+2.  Allow user to use predefined 2D polytopes
+    1.  2D square
+    2.  2D equilateral triangle
+    3.  2D hexagon
+3.  Allow user to use predefined 2D tilings
+    1.  multiple parallel straight lines with equal space in 2D subspace
+    2.  2D square tiling
+    3.  2D triangle tiling
+4.  Allow user to use predefined 3D polytopes
+    1.  3D cube
+    2.  3D simplex
+    3.  3D cross polytope
+5.  Allow user to use predefined 3D tiling
+    1.  3D cube tiling
+6.  Allow user to transform all the vectors with defined linear map (only 2D and 3D square matrix) based on float numpy array.
+7.  Visualizing the 2D representation of user defined 3D geometric objects (3d polytopes, 3d tiling, 2d hyperplain, 
+    3d straight line and 3d long straight line) with the following methods
+    1.  2D hyperplane cross section of 3D geometric objects
+    2.  Use the projection algorithm that 3B1B demonstrate in this video (https://youtu.be/IQqtsm-bBRU?si=kFzA0KgvUY0ysyXQ) at 19:50 to 22:05.
+    3.  Multiple 3D vector with singular matrix (matrix with determinant equal to 0)
+8.  Compute basic linear algebra related algorithm.
+    1.  Addition of Numpy array
+    2.  Dot product
+    3.  Matrix and scalar multiplication
+    4.  Matrix power
+    5.  Length of vector
+    6.  Angle between 2 vectors
+    7.  Vector projection to another vector
+    8.  3D Cross product
+    9.  Gaussian Elimination
+    10. Null space
+    11. Inverse Matrix
+    12. Determinant
+    13. Eigan Value
+    14. Eigan Vector
+
+## Future Plan after finish MVP
+
+1.  Extend the MVP with higher dimensional Vector space over Real.
+    1.  Allow user to define other linear transformed geometric object in higher dimensional Vector Space over Real.
+    2.  Creating the 2D and 3D representation of higher dimensional geometric object via the same 3 algorithms in the MVP.
+    3.  Hardware evaluation and optimization for defining higher dimensional objects.
+2.  Add other dimensional reduction algorithms for creating 2D and 3D representation of high dimensional objects e.g. PCA, t-SNE, LDA etc.
+3.  Add other famous geometric objects e.g. 4D platonic solid, sphere, torus, Möbius strip, Klein Bottle, multi dimensional Bezier curve, Archimedean solids, A, B, C, Z, Number 9, Number 3 etc.
+4.  Check if 2 or more objects are collided with each other.
+5.  Add domain specific features base on practical users, educational and/or ethical demand (https://80000hours.org/career-guide/most-pressing-problems/?int_campaign=2023-05--primary-navigation__career-guide)
+    1.  More advanced linear algebra related features e.g. SVD, Matrix factorization, LU decomposition, Affine Transformation, Markov chain, Matrix exponential, randomized numerical linear algebra, Linear Programming, Random Matrix Theory etc.
+    2.  More geometric algebra related features.
+    3.  AI Transparency and optimization
+    4.  Analyzing, optimizing and/or compressing high dimensional dataset
+    5.  Relativity visualization
+    6.  Lean Proof Assistent Integration for assisting pure mathematical research
+    7.  Extend the Vector Space over Real to Module over commutative ring for specific domain e.g. cryptography, error correction etc.
+    8.  Quantum Physic
+    9.  Reinforcement learning framework for pure mathematical research e.g. Sphere Packing, Numerical Algorithm related optimization etc.
+    10. Group decomposition of high dimensional tiling and polytopes.
+    11. Other useful features.
 
 # Folder structures
 
