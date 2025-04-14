@@ -34,27 +34,27 @@ This project is created in 2025, Apr 10th, it is unusable and in the MVP (minimu
 
 ## The expected features in MVP (minimum viable product)
 
-1.  Allow user to define vector (a.k.a. point, defined by only 2D or 3D numpy float array) only in 2D and 3D Vector space over Real number manually or via their dataset (similar or same as Numpy and Pandas) (by using `obj/obj_basis/`).
-2.  Allow user to compose vector as the following objects with user defined rgb color (by using `obj/obj_basis/`)
+1.  Allow user to define vector (a.k.a. point, defined by only 2D or 3D numpy float array) only in 2D and 3D Vector space over Real number manually or via their dataset (similar or same as Numpy and Pandas) (by using `obj/basis/`).
+2.  Allow user to compose vector as the following objects with user defined rgb color (by using `obj/basis/`)
     1.  straight line (defined by 2 vectors, both 2 ends of the line are defined by vectors)
     2.  long straight line (defined by 2 vectors, the line is long indefinitely, both 2 ends of line are defined by the boundary of visualization canvas)
     3.  2D polytope (defined by multiple straight lines)
     4.  3D polytope (defined by multiple 2D polytope)
     5.  tiling (defined by multiple straight lines and/or multiple long straight lines)
     6.  hyperplain (defined by one normal vector and one center vector)
-3.  Allow user to use predefined 2D polytopes (by using `obj/obj_polytope/`)
+3.  Allow user to use predefined 2D polytopes (by using `obj/polytope/`)
     1.  2D square
     2.  2D equilateral triangle
     3.  2D hexagon
-4.  Allow user to use predefined 2D tilings (by using `obj/obj_polytope/`)
+4.  Allow user to use predefined 2D tilings (by using `obj/polytope/`)
     1.  multiple parallel straight lines with equal space in 2D subspace
     2.  2D square tiling
     3.  2D triangle tiling
-5.  Allow user to use predefined 3D polytopes (by using `obj/obj_polytope/`)
+5.  Allow user to use predefined 3D polytopes (by using `obj/polytope/`)
     1.  3D cube
     2.  3D simplex
     3.  3D cross polytope
-6.  Allow user to use predefined 3D tiling (by using `obj/obj_polytope/`)
+6.  Allow user to use predefined 3D tiling (by using `obj/polytope/`)
     1.  3D cube tiling
 7.  Allow user to transform all the vectors with defined linear map (only 2D and 3D square matrix) based on float numpy array (by using `linear_algebra/`).
 8.  Visualizing the 2D representation of user defined 3D geometric objects (3d polytopes, 3d tiling, 2d hyperplain, 
@@ -96,9 +96,10 @@ This project is created in 2025, Apr 10th, it is unusable and in the MVP (minimu
 2.  Add other dimensional reduction algorithms for creating 2D and 3D representation of high dimensional objects e.g. PCA, t-SNE, LDA, more generalized version of taking 2D image photo of 3D objects to any n D objects etc.
 3.  Add various other way to visualize linear algebra related concepts (I might skips this if I have no new visualization idea).
 4.  Add other famous objects in `obj/`
-    1.  Add other famous polytope e.g. 4D Platonic solids, Archimedean solids etc in `obj/obj_polytope/`
-    2.  Add smooth manifold e.g. sphere, torus, Mobius Strip, Klein Bottle etc in `obj/obj_smooth/` using `obj/obj_basis/bezier.py`
-    3.  Add A, B, C, ..., Z, 0, ..., 8 and 9 in `obj/obj_alphabet/`.
+    1.  Add other famous polytope e.g. 4D Platonic solids, Archimedean solids etc in `obj/polytope/`
+    2.  Add smooth manifold e.g. sphere, torus, Mobius Strip, Klein Bottle etc in `obj/smooth/` using `obj/basis/bezier.py`
+    3.  Add A, B, C, ..., Z, 0, ..., 8 and 9 in `obj/alphabet/`.
+    4.  Add fractal in `obj/fractal/`
 5.  Check if 2 or more objects are collided with each other.
 6.  Add domain specific features base on practical users, educational and/or ethical demand (https://80000hours.org/career-guide/most-pressing-problems/?int_campaign=2023-05--primary-navigation__career-guide)
     1.  More advanced linear algebra related features e.g. SVD, Matrix factorization, LU decomposition, Affine Transformation, Markov chain, Matrix exponential, numerical randomized linear algebra, Linear Programming, Random Matrix Theory, multi-linear algebra etc.
@@ -123,7 +124,7 @@ This project compose of the following sub folders
 4.  `doc_tutorial/`
 -   Contains: other additional tutorial documentations about useful tool e.g. Python virtual environment, Git, Manim etc. and other related concepts e.g. basic geometry, linear algebra etc.
 5.  `include/`
--   Contains: Class interface of `canvas/`, `linear_algebra/`, `obj/obj_basis/` and `obj/obj_polytope/` for enhancing SOLID coding practice.
+-   Contains: Class interface of `canvas/`, `linear_algebra/`, `obj/basis/` and `obj/polytope/` for enhancing SOLID coding practice.
 6.  `linear_algebra/`
 -   Purpose : computing linear algebra related algorithms.
 7.  `obj`
