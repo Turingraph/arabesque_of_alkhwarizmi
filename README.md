@@ -131,7 +131,7 @@ This project compose of the following sub folders
 -   Contains: Class interface of `canvas/`, `linear_algebra/`, `obj/basis/` and `obj/polytope/` for enhancing SOLID coding practice.
 6.  `linear_algebra/`
 -   Purpose : computing linear algebra related algorithms.
-7.  `obj`
+7.  `obj/`
 -   Purpose : defining concrete geometrical objects e.g. cube, tiling, vector etc.
 8.  `tests/`
 -   Contains: Coding scripts that check if our code works as expected.
