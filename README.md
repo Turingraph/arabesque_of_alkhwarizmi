@@ -180,6 +180,18 @@ Recommended Learning Resource
 4.  Linear Algebra Done Right
 -   https://linear.axler.net/
 
+# Other related Repository
+
+1.  `vitruvian_post_human`
+-   URL : None (It is not created yet. Might be created in future)
+-   Purpose : Generalizing and making the 3D cross section visualization of the everyday objects e.g. chair, human, dog, car, a, b, z, 9, 1 etc to 4d or higher Euclidean Geometry based on the high dimensional version of Vitruvian Man inside hypercube and hypersphere for educational purpose, artistic purpose, robotic design and universal design.
+2.  `the_uxui_with_a_thousand_faces`
+-   URL : https://github.com/Turingraph/the_uxui_with_a_thousand_faces
+-   Purpose : Contains fictional plot, soundtrack, story board, and other forms of artworks as the part of UXUI and software documentation based story telling for artistic purpose balance with practical utility.
+3.  `arabesque_of_alkhwarizmi` fictional plot in `the_uxui_with_a_thousand_faces`
+-   URL : https://github.com/Turingraph/the_uxui_with_a_thousand_faces/blob/main/cheche/arabesque_of_alkhwarizmi/plot.md
+-   Purpose : My own fictional plot and artworks as the part of UXUI and software documentation based story telling for this project (`arabesque_of_alkhwarizmi`).
+
 # Additional Information
 
 -	Read `doc/` for more additional information about our project.
