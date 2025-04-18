@@ -102,8 +102,7 @@ This project is created in 2025, Apr 10th, it is unusable and in the MVP (minimu
 4.  Add other famous objects in `obj/`
     1.  Add other famous polytope e.g. 4D Platonic solids, Archimedean solids etc in `obj/polytope/`
     2.  Add smooth manifold e.g. sphere, torus, Mobius Strip, Klein Bottle etc in `obj/smooth/` using `obj/basis/bezier.py`
-    3.  Add A, B, C, ..., Z, 0, ..., 8 and 9 in `obj/alphabet/`.
-    4.  Add fractal in `obj/fractal/`
+    3.  Add fractal in `obj/fractal/`
 5.  Check if 2 or more objects are collided with each other.
 6.  Add domain specific features base on practical users, educational and/or ethical demand (https://80000hours.org/career-guide/most-pressing-problems/?int_campaign=2023-05--primary-navigation__career-guide)
     1.  More advanced linear algebra related features e.g. SVD, Matrix factorization, LU decomposition, Affine Transformation, Markov chain, Matrix exponential, numerical randomized linear algebra, Linear Programming, Random Matrix Theory, multi-linear algebra etc.
